@@ -44,7 +44,8 @@ class Trocla::Stores::Dummy < Trocla::Store
   def fake_x509(key)
 
     # TODO: create random keypairs here
-    output = %{-----BEGIN PRIVATE KEY-----
+    output = %{
+-----BEGIN PRIVATE KEY-----
 MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBS7EeI1UwluNF
 sJpZbouCSj1ei02zGUESb/D6/8VW9YjtjKc7fYsAGcj2SgvTCc3mgwxulOdD6Rs0
 Z3uZXLye0XfPI3ImdbBd2VVYw90Dt/svV0KTdu3Osc+2bmZLbk7PPXGkeEj0bwJM
@@ -80,7 +81,8 @@ c9MssX6MyDbzr57XELrNc7CQVtnR3fcSHzLOtUveeou+kJggskM/eDG5b6kufIxN
 5snWrW2jMTdOTShZdQ2yCHT8ZCm8S8IiKW/S27G0ok8y1X8iuoQp60OTQdAtZ2dw
 wZNf8cqVdVikbqUwiFJ2DvOz+inyYlzF9kCfTwvuBx2GZlinwslVD9kkaixTzn0C
 /wIDAQAB
------END PUBLIC KEY-----}
+-----END PUBLIC KEY-----
+}
     output
   end
   
