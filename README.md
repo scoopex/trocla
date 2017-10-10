@@ -256,6 +256,7 @@ Such a store is a simple class that implements Trocla::Store and at the moment t
 
 * Moneta - the default store using [moneta](https://rubygems.org/gems/moneta) to delegate storing the values
 * Memory - simple inmemory backend. Mainly used for testing.
+* Dummy - simple backend which accepts but ignores store operations and returns dummy values for any fetch operation. Only useful for testing purposes.
 
 The backend is chosen based on the `store` configuration option. If it is a symbol, we expect it to be a store that we ship with trocla. Otherwise, we assume it to be a fully qualified ruby class name, that inherits from Trocla::Store. If trocla should load an additional library to be able to find your custom store class, you can set `store_require` to whatever should be passed to a ruby require statement.
 
