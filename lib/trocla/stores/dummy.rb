@@ -36,7 +36,7 @@ class Trocla::Stores::Dummy < Trocla::Store
     if format == "x509"
 		 fake_x509(key)
     else
-       format + "_" + SecureRandom.uuid 
+       format + "_" + SecureRandom.uuid + SecureRandom.uuid
     end
   end
 
